@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bộ chọn thuộc tính</title>
+    <style>
+        section p{
+            background-color: yellow;
+
+        }
+
+        section>p{
+            color: red;
+
+        }
+        /* tag01, tag02 */
+        section, p {
+            border: 1px solid blue;
+        }
+/* tag01+tag02 */
+        p+p {
+            color: blue;
+        }
+        div+p{
+            color: blueviolet;
+        }
+
+        /* tag01~tag02 */
+        h3 ~ p {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+<!-- tag01 tag02 -->
+    <section>
+        <div>
+            <h3> Tag01 tag02</h3>
+            <p>Nội dung tag01 tag02</p>
+        </div>
+        <p>Nội dung tag01 tag02</p>
+    </section>
+
+<!-- tag01>tag02 -->
+    <section>
+        <div>
+            <h3> Tag01 > tag02</h3>
+            <p>Nội dung tag01 tag02</p>
+        </div>
+        <p>Nội dung tag01 tag02</p>
+    </section>
+
+    <!-- tag01, tag02 -->
+
+
+    <!-- tag01+tag02 -->
+    <section>
+        <div>
+            <h3> Tag01 + tag02</h3>
+            <p>Nội dung tag01 + tag02</p>
+        </div>
+        <p>Nội dung tag01 +  tag02</p>
+        <p>Nội dung tag01 +  tag02</p>
+        <p>Nội dung tag01 +  tag02</p>
+        <p>Nội dung tag01 +  tag02</p>
+        <p>Nội dung tag01 +  tag02</p>
+
+    </section>
+
+    <!-- tag01~tag02 -->
+
+    <section>
+        <div>
+            <h3> Tag01 ~ tag02</h3>
+            <p>Nội dung tag01 ~ tag02</p>
+        </div>
+        <p>Nội dung tag01 ~  tag02</p>
+        <p>Nội dung tag01 ~  tag02</p>
+        <p>Nội dung tag01 ~  tag02</p>
+        <p>Nội dung tag01 ~  tag02</p>
+        <p>Nội dung tag01 ~  tag02</p>
+
+    </section>
+    
+</body>
+</html>
+
+<!-- Chú ý sự khác biệt giữa tag01+tag02 (chỉ duy nhất cho cái nằm sau mà thôi) và tag01~tag02 (all)  -->

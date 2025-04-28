@@ -1,0 +1,20 @@
+
+Một số thẻ hay sử dụng 
+- table, thead, tbody, tfoot, th,tr,td 
+
+Các thuộc tính cần nhớ 
+--border,colspan, rowspan, cellpadding, cellspacing 
+--form: method, encryptype, action
+  + input -- type: text, password, file, radio, checkbox, button,submit,hidden
+                   + ngày thang năm (date, datetime-local, month,),range, number, email,..
+         value: giá trị 
+         placeholder : hiển thị giá trị khi chưa có value 
+         max, min, checked
+  + select, option
+  + textarea
+
+  --h1->h6 
+  --section, header, footer
+  --div nằm trong section, p, span, lable, a, img, nav
+  --ul,li
+(Ôn tập trên W3school)
