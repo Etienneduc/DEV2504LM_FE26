@@ -1,0 +1,67 @@
+/* Định dạng menu ngang */
+.main-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #ccc;
+    border: 1px solid #999;
+  }
+  
+  .main-menu li {
+    position: relative;
+    border-right: 1px solid red;
+  }
+  
+  .main-menu li:last-child {
+    border-right: none;
+  }
+  
+  .main-menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+    background-color: #ccc;
+  }
+  
+  /* Hover đổi nền + màu */
+  .main-menu a:hover {
+    background-color: green;
+    color: white;
+  }
+  
+  /* Submenu ẩn mặc định */
+  .submenu {
+    display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #eee;
+  min-width: 250px;
+  border: 1px solid #999;
+  z-index: 1000;
+  list-style: none;       /* ✅ Xóa chấm đầu dòng */
+  padding: 0;
+  margin: 0;
+  }
+  
+  /* Hiển thị submenu khi hover */
+  .dropdown:hover .submenu {
+    display: block;
+  }
+  
+  .submenu li a {
+    padding: 12px;
+    color: black;
+    background-color: #eee;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+  }
+  
+  /* Hover trong submenu */
+  .submenu li a:hover {
+    background-color: green;
+    color: white;
+  }
+  

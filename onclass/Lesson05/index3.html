@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tậ<progress></progress></title>
+</head>
+<body>
+    <script>
+        // 1. biện luận phương trình bậc 1 với giá trị được nhập vào từ bàn phím 
+        // var a,b; 
+        // document.write("Giải phương trình bậc 1 ax+b=0") 
+
+        // a= parseFloat( prompt("Nhập giá trị a: ") )
+        // b= parseFloat( prompt("Nhập giá trị b: ") )
+
+        // if (a==0) {
+        //     if (b==0) {
+        //         alert("PT vô số nghiệm"); 
+                
+        //     } else {
+        //         alert("PT vô nghiệm"); 
+
+        //     }
+            
+        // } else {
+        //     alert("Phương trình có nghiệm duy nhất: x= "+ -b/a)
+        // }
+
+// cách 2 dùng toán tử logic 
+        // 2. In ra ngoài màn hình từ 10-50 
+
+        // 3. In ra ngoài màn hình giá trị số nguyên tố nhỏ hơn số vừa nhập từ bàn phím
+
+        // 4. Biện luận phương trình bậc 2 + kết hợp function 
+        // Hàm bậc 2: ax^2 + bx + c = 0 
+        function hambacHai(a,b,c) {
+            var delta= b*b-4*a*c;  
+
+            if (a==0) {
+                                    if (b === 0) {
+                                if (c === 0) {
+                                    alert("Phương trình vô số nghiệm!");
+                                } else {
+                                    alert("Phương trình vô nghiệm!");
+                                }
+                            } else {
+                                let x = -c / b;
+                                alert("Phương trình là bậc nhất, nghiệm là: x = " + x);
+                            }
+                                    
+            } 
+            else {
+                            if (delta<0) {
+                            alert("Phương trình trên vô nghiệm!")
+                            
+                        } else if (delta==0){
+                            alert("Phương trình trên có nghiệm duy nhất: !" + -b/(2*a))
+
+                            
+                        }
+                        else {
+                            var x1, x2; 
+                            x1= (-b + Math.sqrt(delta))/ (2*a); 
+                            x2= (-b - Math.sqrt(delta))/ (2*a); 
+
+                            alert("Phương trình có hai nghiệm phân biệt: "+ "x1= "+x1+ ", x2=" +x2)
+                        }
+                
+            }
+            
+        }
+        var hambac2 = hambacHai(0,0,0); 
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+.vertical-menu {
+    width: 200px;
+    border: 2px solid black;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Phần tiêu đề */
+  .vertical-menu .title {
+    background-color: red;
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 2px solid black;
+  }
+  
+  /* Các mục menu */
+  .vertical-menu li a {
+    display: block;
+    background-color: #ccc;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+  }
+  
+  /* Hover hiệu ứng */
+  .vertical-menu li a:hover {
+    background-color: green;
+    color: white;
+  }
+  

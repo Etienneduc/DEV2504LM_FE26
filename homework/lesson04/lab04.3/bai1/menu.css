@@ -1,0 +1,32 @@
+/* Căn chỉnh danh sách ngang */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #ccc;
+  }
+  
+  /* Định dạng từng mục */
+  .menu li {
+    border-right: 1px solid red;
+  }
+  
+  .menu li:last-child {
+    border-right: none;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+    background-color: #ccc;
+  }
+  
+  /* Hiệu ứng hover */
+  .menu a:hover {
+    background-color: green;
+    color: white;
+  }
+  

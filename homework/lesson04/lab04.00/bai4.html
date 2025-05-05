@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4.4</title>
+    <style>
+        header, nav, footer,div{
+            border: 1px solid rgb(230, 121, 121);
+            margin: 1px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        header {
+            height: 50px;
+        }
+        nav {
+            height: 20px;
+        }
+        section div {
+            height: 500px;
+
+        }
+        #box-left,#box-right {
+            width: 20%;
+        }
+        #box-mid{
+            width: 60%;
+        }
+        section {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Header
+    </header>
+    <nav> Nav </nav>
+    <section>
+        <div id="box-left">Left</div>
+        <div id="box-mid">Body</div>
+        <div id="box-right">Right</div>
+    </section>
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>

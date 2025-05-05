@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data" id="formid">
+        <div>
+            <label for="username"> UserName: </label>
+            <!-- text -->
+            <input type="text" name="username" id="username" placeholder="Nhập email">
+          
+        </div>
+        <div>
+            <!-- passw -->
+             <label for="password"> Password: </label>
+            <input type="password" name="password" id="password">
+        
+        </div>
+        <!-- hidden - input -->
+        <input type="hidden" name="hidden" id="hidden">
+
+        <div>
+            <!-- checkbox -->
+         <label for="caulong">Cầu lông</label>
+         <input type="checkbox" name="hobby" id="caulong" checked>
+         <label for="caulong">Bóng đá</label>
+         <input type="checkbox" name="hobby" id="bongda">
+         <label for="caulong">Bóng chuyền</label>
+         <input type="checkbox" name="hobby" id="bongchuyen">
+         <label for="caulong">Bơi lội</label>
+         <input type="checkbox" name="hobby" id="boiloi">
+        </div>
+
+        <div>
+            <!-- radio  -->
+         <label for="nam">Nam</label>
+         <input type="radio" name="gioitinh" id="nam" checked>
+         <label for="nữ">Nữ</label>
+         <input type="radio" name="gioitinh" id="nữ">
+        
+        </div>
+        
+
+        <!-- button --> 
+         <input type="button" name="button" id="button" value="button">
+         <input type="submit" name="submit" id="submit" value="submit">
+
+
+         <!--  reset đưa về giá trị mặc định ban đầu-->
+        
+        <!-- input kiểu file -->
+         <label for="avatar"> Avatar</label>
+         <input type="file" name="avatar" id="avatar">
+       
+        <div>
+            <!-- Thời gian -->
+             <input type="date" name="" id="">
+             <input type="month" name="" id="">
+             <input type="time" name="" id="">
+        </div>
+
+        <div>
+            <!-- type= "email" -->
+             <label for="email">Email</label>
+             <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <!-- Kiểu số -->
+             <label for="age"> Tuổi: </label>
+             <input type="number" name="age" id="age">
+        </div>
+
+
+        <!-- SELECT OPTION  -->
+         <div>
+            <select name="tinh" id="tinh">
+                <option value="">--0Vui lòng chọn tỉnh---</option>
+                <option value="HN">Hà Nội</option>
+                <option value="HY">Hưng Yên</option>
+                <option value="HP">Hải Phòng</option>
+                <option value="BG">Bắc Giang</option>
+            </select>
+         </div>
+
+       
+        </form>
+</body>
+</html>

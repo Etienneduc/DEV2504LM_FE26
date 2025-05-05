@@ -1,0 +1,6 @@
+javascripts là ngôn ngữ lập trình kịch bản 
+Phân biệt chữ hoa và chữ thường 
+Luôn có cặp kí hiệu đóng mở {}, ()
+
+Biến trong javascripts
+

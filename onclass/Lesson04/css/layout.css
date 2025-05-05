@@ -1,0 +1,326 @@
+*{
+    font-family: "Gotham-Medium";
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+} 
+.w-100{
+    width: 100%;
+}
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+header> .container {
+    display: flex;
+    justify-content: space-between;
+}
+#header-menu, #icon-mobile {
+    display: flex;
+    align-self: center;
+}
+
+#header-menu ul{
+    display: flex;
+    
+}
+
+#header-menu ul li, #header-menu-mobile li{
+    padding: 1rem;
+    
+}
+#header-menu ul li a ,#header-menu-mobile li a{
+    text-transform: uppercase;
+    color: black;
+    position: relative;
+
+}
+
+#header-menu  a::after, #header-menu-mobile  a::after {
+ content: "";
+ position: absolute;
+ width: 70% ;
+ height: 4px;
+ background-color: orange;
+ left: 0px;
+ top: calc(100% + 2px);
+ display: none;
+ border-radius: 5px;
+}
+
+#header-menu ul li:hover a::after {
+    display: block;
+
+}
+
+#header-menu-mobile {
+    display: none;
+
+}
+#icon-mobile {
+    display: none;
+}
+
+@media (max-width: 575.98px) {
+    .container
+    {
+        max-width: 450px;
+        margin: auto;
+    } 
+    #header-logo{
+        width: 3rem;
+    }
+    #header-menu {
+        display: none;
+    }
+    #icon-mobile {
+        display: block;
+    }
+    #header-menu-mobile {
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+    #header-menu-mobile  a::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #header-menu-mobile  a {
+        text-align: center;
+    }
+    #icon-mobile:hover  #header-menu-mobile {
+        display: block;
+    }
+ }
+
+
+/* footer */
+/* --- PHẦN ĐỐI TÁC --- */
+.partner-section {
+    text-align: center;
+    padding: 40px 0;
+    background: #fff;
+  }
+  
+  .partner-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2b2b2b;
+    margin-bottom: 20px;
+  }
+  
+  .partner-logos img {
+    max-height: 50px;
+    margin: 0 15px;
+  }
+  
+  /* --- PHẦN CTA VÀ FORM --- */
+  .cta-section {
+    background: url('images/bg-sofa.jpg') no-repeat center center/cover; /* ảnh nền */
+    position: relative;
+    padding: 60px 0;
+  }
+  
+  .cta-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* tối nền */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    color: #fff;
+  }
+  
+  .cta-left img {
+    width: 180px;
+  }
+  
+  .cta-right {
+    flex: 1;
+    padding-left: 40px;
+  }
+  
+  .cta-text {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  
+  .cta-form input {
+    padding: 10px 15px;
+    width: 250px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .cta-form button {
+    padding: 10px 20px;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+    /* Tin tức */
+  /* --- TIN TỨC --- */
+.news-section {
+    max-width: 1100px;
+  margin: auto;
+  padding: 60px 0;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2b2b2b;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: #c9a063;
+    display: block;
+    margin: 10px auto 0;
+  }
+  
+  .news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 cột: trái - phải */
+    gap: 40px;
+    align-items: stretch;
+  }
+  
+  .news-featured {
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+  
+  .news-featured img {
+    width: 100%;
+  height: auto;
+  border-radius: 6px;
+  }
+  
+  .news-content {
+    background-color: #c9a063;
+    padding: 20px;
+    color: white;
+    position: relative;
+    top: -5px;
+  }
+  
+  .news-content h3 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .news-content p {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  
+  .news-list {
+    display: grid;
+  grid-template-rows: repeat(3, 1fr); /* 3 hàng bằng nhau */
+  gap: 20px;
+  }
+  
+  .news-item {
+    display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  }
+  
+  .news-item img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .news-info h4 {
+    font-size: 14px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .news-info p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  .read-more {
+    margin-top: 10px;
+    text-align: right;
+  }
+  
+  .read-more a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #c9a063;
+  }
+  
+  /* --- FOOTER --- */
+  .footer {
+    background-color: #2b2b2b;
+    color: #ccc;
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 30px;
+  }
+  
+  .footer-column h4 {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .footer-column p,
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    color: white;
+  }
+  
+  .social-icons a img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .footer-column img {
+    margin-top: 15px;
+    max-width: 130px;
+  }
+  
